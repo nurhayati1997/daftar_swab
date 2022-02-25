@@ -112,7 +112,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="card-body">
 													<div class="form-group row">
 														<div class="col-lg-4">
-															<label>Identitas Pasien:</label>
+															<label>A. IDENTITAS PASIEN:</label>
 															<span class="form-text text-muted">Mohon Masukkan Nama Lengkap Anda</span>
 															<input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" required />
 														</div>
@@ -153,12 +153,12 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Pilih Jenis Kelamin</span>
-															<div class="radio-inline" id="jk">
+															<div class="radio-inline" >
 																<label class="radio radio-solid">
-																<input type="radio" name="example_2" checked="checked" value="2" />
+																<input type="radio" name="jk" id="jk" checked="checked" value="male" />
 																<span></span>Laki-Laki</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="example_2" value="2" />
+																<input type="radio" name="jk" id="jk" value="female" />
 																<span></span>Perempuan</label>
 															</div>
 														</div>
@@ -174,27 +174,91 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="text" class="form-control" id="pekerjaan" placeholder="Pekerjaan" />
 															</div>
 														</div>
-													</div>
-													<!-- <div class="form-group row">
 														<div class="col-lg-4">
-															<label>Contact:</label>
-															<input type="email" class="form-control" placeholder="Enter contact number" />
-															<span class="form-text text-muted">Please enter your contact</span>
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Jalan / Blok</span>
+															<input type="text" class="form-control" id="jalan" placeholder="Jalan / Blok" />
 														</div>
 														<div class="col-lg-4">
-															<label>Fax:</label>
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan RT / RW</span>
+															<input type="text" class="form-control" id="rt" placeholder="RT / RW" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Desa / Kelurahan</span>
+															<input type="text" class="form-control" id="desa" placeholder="Desa / Kelurahan" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Kecamatan</span>
+															<input type="text" class="form-control" id="kec" placeholder="Kecamatan" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Email:</label> -->
+															<span class="form-text text-muted">Mohon Masukkan Kabupaten / Kota</span>
+															<input type="text" class="form-control" id="kab" placeholder="Kabupaten / Kota" />
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Username:</label> -->
+															<span class="form-text text-muted">Masukkan Telp / HP</span>
 															<div class="input-group">
 																<div class="input-group-prepend">
 																	<span class="input-group-text">
 																		<i class="la la-info-circle"></i>
 																	</span>
 																</div>
-																<input type="text" class="form-control" placeholder="Fax number" />
+																<input type="text" class="form-control" id="no_hp" placeholder="Telepon / HP" />
 															</div>
-															<span class="form-text text-muted">Please enter fax</span>
+														</div>
+													</div>
+													<div class="form-group row">
+														<div class="col-lg-4">
+															<label>B. INFORMASI KLINIS:</label>
+															<span class="form-text text-muted">Masukkan Tgl Pertama kali Timbul gejala</span>
+															<input type="date" class="form-control" id="timbul_gejala" placeholder="Tgl pertama kali timbul gejala" />
 														</div>
 														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah ada Riwayat Demam ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_demam" id="riwayat_demam" checked="checked" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_demam" id="riwayat_demam" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Fax:</label> -->
+															<span class="form-text text-muted">Masukkan Derajat Demam</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="derajat_demam" placeholder="Misal 39 " />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Apakah ada Batuk?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" checked="checked" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+
+														<!-- ini di cut ya -->
+														<!-- <div class="col-lg-4">
 															<label>Address:</label>
+															<span class="form-text text-muted">Please enter your address</span>
 															<div class="input-group">
 																<input type="text" class="form-control" placeholder="Enter your address" />
 																<div class="input-group-append">
@@ -203,10 +267,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</span>
 																</div>
 															</div>
-															<span class="form-text text-muted">Please enter your address</span>
-														</div>
+														</div> -->
+														
 													</div>
-													<div class="form-group row">
+													<!-- <div class="form-group row">
 														<div class="col-lg-4">
 															<label>Postcode:</label>
 															<div class="input-group">
