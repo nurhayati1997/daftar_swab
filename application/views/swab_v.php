@@ -112,6 +112,18 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="card-body">
 													<div class="form-group row">
 														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Pilih Jenis Test SWAB</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="jenis_swab" id="jenis_swab" value="antigen" />
+																<span></span>SWAB ANTIGEN</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="jenis_swab" id="jenis_swab" value="pcr" />
+																<span></span>SWAB PCR</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
 															<label>A. IDENTITAS PASIEN:</label>
 															<span class="form-text text-muted">Mohon Masukkan Nama Lengkap Anda</span>
 															<input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" required />
@@ -250,10 +262,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="1" />
+																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="0" />
+																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -265,10 +277,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="1" />
+																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="0" />
+																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -280,10 +292,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="1" />
+																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="0" />
+																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -295,10 +307,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="1" />
+																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="0" />
+																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -310,10 +322,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="lemah" id="lemah" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="lemah" id="lemah" value="1" />
+																<input type="radio" name="lemah" id="lemah" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="lemah" id="lemah" value="0" />
+																<input type="radio" name="lemah" id="lemah" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -322,13 +334,13 @@ License: You must have a valid license purchased only from themeforest(the above
 															<span class="form-text text-muted">Apakah Nyeri Otot?</span>
 															<div class="radio-inline" >
 																<label class="radio radio-solid">
-																<input type="radio" name="nyeri_otot" id="nyeri_otot"  />
+																<input type="radio" name="nyeri_otot" id="nyeri_otot"  value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="nyeri_otot" id="nyeri_otot" value="1" />
+																<input type="radio" name="nyeri_otot" id="nyeri_otot" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="nyeri_otot" id="nyeri_otot" value="0" value="1"/>
+																<input type="radio" name="nyeri_otot" id="nyeri_otot" value="2"/>
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -337,13 +349,13 @@ License: You must have a valid license purchased only from themeforest(the above
 															<span class="form-text text-muted">Apakah Nyeri Mual atau Muntah?</span>
 															<div class="radio-inline" >
 																<label class="radio radio-solid">
-																<input type="radio" name="mual" id="mual"  />
+																<input type="radio" name="mual" id="mual"  value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="mual" id="mual" value="1" />
+																<input type="radio" name="mual" id="mual" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="mual" id="mual" value="0" value="1"/>
+																<input type="radio" name="mual" id="mual" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -352,13 +364,13 @@ License: You must have a valid license purchased only from themeforest(the above
 															<span class="form-text text-muted">Apakah Nyeri Abdomen?</span>
 															<div class="radio-inline" >
 																<label class="radio radio-solid">
-																<input type="radio" name="abdomen" id="abdomen"  />
+																<input type="radio" name="abdomen" id="abdomen"  value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="abdomen" id="abdomen" value="1" />
+																<input type="radio" name="abdomen" id="abdomen" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="abdomen" id="abdomen" value="0" value="1"/>
+																<input type="radio" name="abdomen" id="abdomen" value="2"/>
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -367,13 +379,13 @@ License: You must have a valid license purchased only from themeforest(the above
 															<span class="form-text text-muted">Apakah Diare?</span>
 															<div class="radio-inline" >
 																<label class="radio radio-solid">
-																<input type="radio" name="diare" id="diare"  />
+																<input type="radio" name="diare" id="diare"  value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="diare" id="diare" value="1" />
+																<input type="radio" name="diare" id="diare" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="diare" id="diare" value="0" value="1"/>
+																<input type="radio" name="diare" id="diare" value="2"/>
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -500,10 +512,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="pneumonia" id="pneumonia" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="pneumonia" id="pneumonia" value="2" />
+																<input type="radio" name="pneumonia" id="pneumonia" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="pneumonia" id="pneumonia" value="0" />
+																<input type="radio" name="pneumonia" id="pneumonia" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -514,10 +526,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="ards" id="ards" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="ards" id="ards" value="2" />
+																<input type="radio" name="ards" id="ards" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="ards" id="ards" value="0" />
+																<input type="radio" name="ards" id="ards" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -536,13 +548,13 @@ License: You must have a valid license purchased only from themeforest(the above
 															<span class="form-text text-muted">Apakah Pasien Mempunyai diagnosis atau otiologi lain untuk penyakit Pernafasannya ?</span>
 															<div class="radio-inline" >
 																<label class="radio radio-solid">
-																<input type="radio" name="ards" id="ards" value="1" />
+																<input type="radio" name="etiologi" id="etiologi" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="ards" id="ards" value="2" />
+																<input type="radio" name="etiologi" id="etiologi" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="ards" id="ards" value="0" />
+																<input type="radio" name="etiologi" id="etiologi" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -616,10 +628,10 @@ License: You must have a valid license purchased only from themeforest(the above
 															<span class="form-text text-muted">Apakah di lakukan tindakan perawatan penggunaan EMCO ?</span>
 															<div class="radio-inline" >
 																<label class="radio radio-solid">
-																<input type="radio" name="tindakan_emco" id="tindakan_emco" value="1" />
+																<input type="radio" name="penggunaan_emco" id="penggunaan_emco" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="tindakan_emco" id="tindakan_emco" value="0" />
+																<input type="radio" name="penggunaan_emco" id="penggunaan_emco" value="0" />
 																<span></span>Tidak</label>
 															</div>
 														</div>
@@ -670,10 +682,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="2" />
+																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="0" />
+																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -773,10 +785,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="2" />
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="0" />
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -876,10 +888,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="2" />
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="0" />
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -913,10 +925,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="1" />
 																<span></span>Ya</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="2" />
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="0" />
 																<span></span>Tidak</label>
 																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="0" />
+																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="2" />
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
@@ -976,7 +988,10 @@ License: You must have a valid license purchased only from themeforest(the above
 															</div>
 														</div>
 													</div>
-													<div class="form-group row"><!-- kontak dengan konfirm-->
+
+													<!-- D -->
+													<div class="form-group row">
+														<!-- kontak dengan konfirm-->
 														<div class="col-lg-4">
 															<label>D. Faktor Kontak/Paparan (lanjutan)</label>
 															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki kontak erat dengan kasus konfirmasi dan probable COVID-19 ?</span>
@@ -1127,7 +1142,346 @@ License: You must have a valid license purchased only from themeforest(the above
 																<span></span>Tidak Tahu</label>
 															</div>
 														</div>
-														
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah Melakukan prosedur yang menimbukan aerosol ?</span>
+															<div class="radio-inline" >
+																<label class="radio radio-solid">
+																<input type="radio" name="aerosol" id="aerosol" value="1" />
+																<span></span>Ya</label>
+																<label class="radio radio-solid">
+																<input type="radio" name="aerosol" id="aerosol" value="0" />
+																<span></span>Tidak</label>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan, Jika melakukan prosedur yang menimbulkan aerosol</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="sebutkan_aerosol" placeholder="Jenis Hewan Peliharaan " />
+															</div>
+														</div>
+													</div>
+													<div class="form-group row">
+														<!-- kontak 1 -->
+														<div class="col-lg-4">
+															<label>D.Daftar Kontak Erat Kasus</label>
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_kasus_1" placeholder="Nama Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur_kasus_1" placeholder="Umur Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jk_kasus_1" placeholder="Jenis Kelamin Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_kasus_1" placeholder="Hubungan dengan Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_kasus_1" placeholder="Alamat Kontak Kasus Pertama" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hp_kasus_1" placeholder="No Hp Kontak Kasus Kedua"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Pertama</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="aktifitas_kasus_1"/>
+															</div>
+														</div>
+														<!-- kontak 2 -->
+														<div class="col-lg-4">
+														<br>
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_kasus_2" placeholder="Nama Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur_kasus_2" placeholder="Umur Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jk_kasus_2" placeholder="Jenis Kelamin Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_kasus_2" placeholder="Hubungan dengan Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_kasus_2" placeholder="Alamat Kontak Kasus Kedua" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hp_kasus_2" placeholder="No Hp Kontak Kasus Kedua"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Kedua</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="aktifitas_kasus_2"/>
+															</div>
+														</div>
+														<!-- kontak 3 -->
+														<div class="col-lg-4">
+														<br>
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_kasus_3" placeholder="Nama Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur_kasus_3" placeholder="Umur Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jk_kasus_3" placeholder="Jenis Kelamin Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_kasus_3" placeholder="Hubungan dengan Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_kasus_3" placeholder="Alamat Kontak Kasus Ketiga" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hp_kasus_3" placeholder="No Hp Kontak Kasus Ketiga"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Ketiga</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="aktifitas_kasus_3"/>
+															</div>
+														</div>
+														<!-- kontak 4 -->
+														<div class="col-lg-4">
+														<br>
+															<span class="form-text text-muted">Sebutkan Nama yang Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="nama_kasus_4" placeholder="Nama Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Umur yang Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="umur_kasus_4" placeholder="Umur Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Jenis Kelamin yang Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="jk_kasus_4" placeholder="Jenis Kelamin Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Hubungan dengan Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hubungan_kasus_4" placeholder="Hubungan dengan Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Alamat Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="alamat_kasus_4" placeholder="Alamat Kontak Kasus Keempat" />
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan No Hp Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="hp_kasus_4" placeholder="No Hp Kontak Kasus Keempat"/>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Sebutkan Aktifitas yang dilakukan oleh Kontak Erat Kasus Keempat</span>
+															<div class="input-group">
+																<div class="input-group-prepend">
+																	<span class="input-group-text">
+																		<i class="la la-info-circle"></i>
+																	</span>
+																</div>
+																<input type="text" class="form-control" id="aktifitas_kasus_4"/>
+															</div>
+														</div>
 													</div>
 												</div>
 												<div class="card-footer">
@@ -1211,6 +1565,7 @@ License: You must have a valid license purchased only from themeforest(the above
         function tambah() {
           $("#tombolTambah").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
           var nama = $("#nama").val()
+          var jenis_swab = $("#jenis_swab").val()
           var nik = $("#nik").val()
           var nama_ortu = $("#nama_ortu").val()
           var ttl = $("#ttl").val()
@@ -1245,6 +1600,88 @@ License: You must have a valid license purchased only from themeforest(the above
           var gangguan_hati = $("#gangguan_hati").val()
           var ppok = $("#ppok").val()
           var kondisi_penyerta_lain = $("#kondisi_penyerta_lain").val()
+          var pneumonia = $("#pneumonia").val()
+          var ards = $("#ards").val()
+          var diagnosis_lain = $("#diagnosis_lain").val()
+          var etiologi = $("#etiologi").val()
+          var diagnosis_pernafasan_lain = $("#diagnosis_pernafasan_lain").val()
+          var rawat_rs = $("#rawat_rs").val()
+          var rs_terakhir = $("#rs_terakhir").val()
+          var tgl_masuk_rs = $("#tgl_masuk_rs").val()
+          var rawat_icu = $("#rawat_icu").val()
+          var tindakan_intubasi = $("#tindakan_intubasi").val()
+          var penggunaan_emco = $("#penggunaan_emco").val()
+          var rs_sebelumnya = $("#rs_sebelumnya").val()
+          var status_pasien_terakhir = $("#status_pasien_terakhir").val()
+          var tgl_meninggal = $("#tgl_meninggal").val()
+          var riwayat_luar_negeri = $("#riwayat_luar_negeri").val()
+          var negara_1 = $("#negara_1").val()
+          var kota_1 = $("#kota_1").val()
+          var tgl_negara_1 = $("#tgl_negara_1").val()
+          var tgl_tiba_negara_1 = $("#tgl_tiba_negara_1").val()
+          var negara_2 = $("#negara_2").val()
+          var kota_2 = $("#kota_2").val()
+          var tgl_negara_2 = $("#tgl_negara_2").val()
+          var tgl_tiba_negara_2 = $("#tgl_tiba_negara_2").val()
+          var riwayat_transmisi_lokal = $("#riwayat_transmisi_lokal").val()
+          var provinsi_transmisi_1 = $("#provinsi_transmisi_1").val()
+          var kota_transmisi_1 = $("#kota_transmisi_1").val()
+          var tgl_transmisi_1 = $("#tgl_transmisi_1").val()
+          var tgl_tiba_transmisi_1 = $("#tgl_tiba_transmisi_1").val()
+          var provinsi_transmisi_2 = $("#provinsi_transmisi_2").val()
+          var kota_transmisi_2 = $("#kota_transmisi_2").val()
+          var tgl_transmisi_2 = $("#tgl_transmisi_2").val()
+          var tgl_tiba_transmisi_2 = $("#tgl_tiba_transmisi_2").val()
+          var riwayat_ketransmisi_lokal = $("#riwayat_ketransmisi_lokal").val()
+          var provinsi_ketransmisi = $("#provinsi_ketransmisi").val()
+          var kota_ketransmisi = $("#kota_ketransmisi").val()
+          var riwayat_kontak_suspek = $("#riwayat_kontak_suspek").val()
+          var nama_suspek_1 = $("#nama_suspek_1").val()
+          var alamat_suspek_1 = $("#alamat_suspek_1").val()
+          var hubungan_suspek_1 = $("#hubungan_suspek_1").val()
+          var tgl_kontak_suspek_1 = $("#tgl_kontak_suspek_1").val()
+          var tgl_terakhir_kontak_suspek_1 = $("#tgl_terakhir_kontak_suspek_1").val()
+          var riwayat_kontak_konfirm = $("#riwayat_kontak_konfirm").val()
+          var nama_konfirm_1 = $("#nama_konfirm_1").val()
+          var alamat_konfirm_1 = $("#alamat_konfirm_1").val()
+          var hubungan_konfirm_1 = $("#hubungan_konfirm_1").val()
+          var tgl_kontak_konfirm_1 = $("#tgl_kontak_konfirm_1").val()
+          var tgl_terakhir_kontak_konfirm_1 = $("#tgl_terakhir_kontak_konfirm_1").val()
+          var ispa = $("#ispa").val()
+          var hewan_peliharaaan = $("#hewan_peliharaaan").val()
+          var jenis_hewan_peliharaan = $("#jenis_hewan_peliharaan").val()
+          var petugas_kesehatan = $("#petugas_kesehatan").val()
+          var apd = $("#apd").val()
+          var aerosol = $("#aerosol").val()
+          var sebutkan_aerosol = $("#sebutkan_aerosol").val()
+          var nama_kasus_1 = $("#nama_kasus_1").val()
+          var umur_kasus_1 = $("#umur_kasus_1").val()
+          var jk_kasus_1 = $("#jk_kasus_1").val()
+          var hubungan_kasus_1 = $("#hubungan_kasus_1").val()
+          var alamat_kasus_1 = $("#alamat_kasus_1").val()
+          var hp_kasus_1 = $("#hp_kasus_1").val()
+          var aktifitas_kasus_1 = $("#aktifitas_kasus_1").val()
+          var nama_kasus_2 = $("#nama_kasus_2").val()
+          var umur_kasus_2 = $("#umur_kasus_2").val()
+          var jk_kasus_2 = $("#jk_kasus_2").val()
+          var hubungan_kasus_2 = $("#hubungan_kasus_2").val()
+          var hp_kasus_2 = $("#hp_kasus_2").val()
+          var alamat_kasus_2 = $("#alamat_kasus_2").val()
+          var aktifitas_kasus_2 = $("#aktifitas_kasus_2").val()
+          var nama_kasus_3 = $("#nama_kasus_3").val()
+          var umur_kasus_3 = $("#umur_kasus_3").val()
+          var jk_kasus_3 = $("#jk_kasus_3").val()
+          var hubungan_kasus_3 = $("#hubungan_kasus_3").val()
+          var alamat_kasus_3 = $("#alamat_kasus_3").val()
+          var hp_kasus_3 = $("#hp_kasus_3").val()
+          var aktifitas_kasus_3 = $("#aktifitas_kasus_3").val()
+          var nama_kasus_4 = $("#nama_kasus_4").val()
+          var umur_kasus_4 = $("#umur_kasus_4").val()
+          var jk_kasus_4 = $("#jk_kasus_4").val()
+          var hubungan_kasus_4 = $("#hubungan_kasus_4").val()
+          var alamat_kasus_4 = $("#alamat_kasus_4").val()
+          var hp_kasus_4 = $("#hp_kasus_4").val()
+          var aktifitas_kasus_4 = $("#aktifitas_kasus_4").val()
     // if (rule == null) {
     //   rule = 0;
     // }
@@ -1253,6 +1690,7 @@ License: You must have a valid license purchased only from themeforest(the above
             method: 'post',
             data: {
               nama: nama,
+              jenis_swab: jenis_swab,
               nik: nik,
               nama_ortu: nama_ortu,
               ttl: ttl,
@@ -1286,7 +1724,89 @@ License: You must have a valid license purchased only from themeforest(the above
               gagal_ginjal: gagal_ginjal, 
               gangguan_hati: gangguan_hati, 
               ppok: ppok, 
-              kondisi_penyerta_lain: kondisi_penyerta_lain
+              kondisi_penyerta_lain: kondisi_penyerta_lain,
+              pneumonia: pneumonia,
+              ards: ards,
+              diagnosis_lain: diagnosis_lain,
+              etiologi: etiologi,
+              diagnosis_pernafasan_lain: diagnosis_pernafasan_lain,
+              rawat_rs: rawat_rs,
+              rs_terakhir: rs_terakhir,
+              tgl_masuk_rs: tgl_masuk_rs,
+              rawat_icu: rawat_icu,
+              tindakan_intubasi: tindakan_intubasi,
+              penggunaan_emco: penggunaan_emco,
+              rs_sebelumnya: rs_sebelumnya,
+              status_pasien_terakhir: status_pasien_terakhir,
+              tgl_meninggal: tgl_meninggal,
+              riwayat_luar_negeri: riwayat_luar_negeri,
+              negara_1: negara_1,
+              kota_1: kota_1,
+              tgl_negara_1: tgl_negara_1,
+              tgl_tiba_negara_1: tgl_tiba_negara_1,
+              negara_2: negara_2,
+              kota_2: kota_2,
+              tgl_negara_2: tgl_negara_2,
+              tgl_tiba_negara_2: tgl_tiba_negara_2,
+              riwayat_transmisi_lokal: riwayat_transmisi_lokal,
+              provinsi_transmisi_1: provinsi_transmisi_1,
+              kota_transmisi_1: kota_transmisi_1,
+              tgl_transmisi_1: tgl_transmisi_1,
+              tgl_tiba_transmisi_1: tgl_tiba_transmisi_1,
+              provinsi_transmisi_2: provinsi_transmisi_2,
+              kota_transmisi_2: kota_transmisi_2,
+              tgl_transmisi_2: tgl_transmisi_2,
+              tgl_tiba_transmisi_2: tgl_tiba_transmisi_2,
+              riwayat_ketransmisi_lokal: riwayat_ketransmisi_lokal,
+              provinsi_ketransmisi: provinsi_ketransmisi,
+              kota_ketransmisi: kota_ketransmisi,
+              riwayat_kontak_suspek: riwayat_kontak_suspek,
+              nama_suspek_1: nama_suspek_1,
+              alamat_suspek_1: alamat_suspek_1,
+              hubungan_suspek_1: hubungan_suspek_1,
+              tgl_kontak_suspek_1: tgl_kontak_suspek_1,
+              tgl_terakhir_kontak_suspek_1: tgl_terakhir_kontak_suspek_1,
+              riwayat_kontak_konfirm: riwayat_kontak_konfirm,
+              nama_konfirm_1: nama_konfirm_1,
+              alamat_konfirm_1: alamat_konfirm_1,
+              hubungan_konfirm_1: hubungan_konfirm_1,
+              tgl_kontak_konfirm_1: tgl_kontak_konfirm_1,
+              tgl_terakhir_kontak_konfirm_1: tgl_terakhir_kontak_konfirm_1,
+              ispa: ispa,
+              hewan_peliharaaan: hewan_peliharaaan,
+              jenis_hewan_peliharaan: jenis_hewan_peliharaan,
+              petugas_kesehatan: petugas_kesehatan,
+              apd: apd,
+              aerosol: aerosol,
+              sebutkan_aerosol: sebutkan_aerosol,
+              nama_kasus_1: nama_kasus_1,
+              umur_kasus_1: umur_kasus_1,
+              jk_kasus_1: jk_kasus_1,
+              hubungan_kasus_1: hubungan_kasus_1,
+              alamat_kasus_1: alamat_kasus_1,
+              hp_kasus_1: hp_kasus_1,
+              aktifitas_kasus_1: aktifitas_kasus_1,
+              nama_kasus_2: nama_kasus_2,
+              umur_kasus_2: umur_kasus_2,
+              jk_kasus_2: jk_kasus_2,
+              hubungan_kasus_2: hubungan_kasus_2,
+              alamat_kasus_2: alamat_kasus_2,
+              hp_kasus_2: hp_kasus_2,
+              aktifitas_kasus_2: aktifitas_kasus_2,
+              nama_kasus_3: nama_kasus_3,
+              umur_kasus_3: umur_kasus_3,
+              jk_kasus_3: jk_kasus_3,
+              hubungan_kasus_3: hubungan_kasus_3,
+              alamat_kasus_3: alamat_kasus_3,
+              hp_kasus_3: hp_kasus_3,
+              aktifitas_kasus_3: aktifitas_kasus_3,
+              nama_kasus_4: nama_kasus_4,
+              umur_kasus_4: umur_kasus_4,
+              jk_kasus_4: jk_kasus_4,
+              hubungan_kasus_4: hubungan_kasus_4,
+              alamat_kasus_4: alamat_kasus_4,
+              hp_kasus_4: hp_kasus_4,
+              aktifitas_kasus_4: aktifitas_kasus_4
             },
             dataType: 'json',
             success: function(data) {
@@ -1294,6 +1814,7 @@ License: You must have a valid license purchased only from themeforest(the above
               // if (data == "") {
                 
                 $("#nama").val("")
+                $("#jenis_swab").val("")
                 $("#nik").val("")
                 $("#nama_ortu").val("")
                 $("#ttl").val("")
@@ -1328,6 +1849,88 @@ License: You must have a valid license purchased only from themeforest(the above
                 $("#gangguan_hati ").val("")
                 $("#ppok").val("")
                 $("#kondisi_penyerta_lain").val("")
+                $("#pneumonia").val("")
+                $("#ards").val("")
+                $("#diagnosis_lain").val("")
+                $("#etiologi").val("")
+                $("#diagnosis_pernafasan_lain").val("")
+                $("#rawat_rs").val("")
+                $("#rs_terakhir").val("")
+                $("#tgl_masuk_rs").val("")
+                $("#rawat_icu").val("")
+                $("#tindakan_intubasi").val("")
+                $("#penggunaan_emco").val("")
+                $("#rs_sebelumnya").val("")
+                $("#status_pasien_terakhir").val("")
+                $("#tgl_meninggal").val("")
+                $("#riwayat_luar_negeri").val("")
+                $("#negara_1").val("")
+                $("#kota_1").val("")
+                $("#tgl_negara_1").val("")
+                $("#tgl_tiba_negara_1").val("")
+                $("#negara_2").val("")
+                $("#kota_2").val("")
+                $("#tgl_negara_2").val("")
+                $("#tgl_tiba_negara_2").val("")
+                $("#riwayat_transmisi_lokal").val("")
+                $("#provinsi_transmisi_1").val("")
+                $("#kota_transmisi_1").val("")
+                $("#tgl_transmisi_1").val("")
+                $("#tgl_tiba_transmisi_1").val("")
+                $("#provinsi_transmisi_2").val("")
+                $("#kota_transmisi_2").val("")
+                $("#tgl_transmisi_2").val("")
+                $("#tgl_tiba_transmisi_2").val("")
+                $("#riwayat_ketransmisi_lokal").val("")
+                $("#provinsi_ketransmisi").val("")
+                $("#kota_ketransmisi").val("")
+                $("#riwayat_kontak_suspek").val("")
+                $("#nama_suspek_1").val("")
+                $("#alamat_suspek_1").val("")
+                $("#hubungan_suspek_1").val("")
+                $("#tgl_kontak_suspek_1").val("")
+                $("#tgl_terakhir_kontak_suspek_1").val("")
+                $("#riwayat_kontak_konfirm").val("")
+                $("#nama_konfirm_1").val("")
+                $("#alamat_konfirm_1").val("")
+                $("#hubungan_konfirm_1").val("")
+                $("#tgl_kontak_konfirm_1").val("")
+                $("#tgl_terakhir_kontak_konfirm_1").val("")
+                $("#ispa").val("")
+                $("#hewan_peliharaaan").val("")
+                $("#jenis_hewan_peliharaan").val("")
+                $("#petugas_kesehatan").val("")
+                $("#apd").val("")
+                $("#aerosol").val("")
+                $("#sebutkan_aerosol").val("")
+                $("#nama_kasus_1").val("")
+                $("#umur_kasus_1").val("")
+                $("#jk_kasus_1").val("")
+                $("#hubungan_kasus_1").val("")
+                $("#alamat_kasus_1").val("")
+                $("#hp_kasus_1").val("")
+                $("#aktifitas_kasus_1").val("")
+                $("#nama_kasus_2").val("")
+                $("#umur_kasus_2").val("")
+                $("#jk_kasus_2").val("")
+                $("#hubungan_kasus_2").val("")
+                $("#alamat_kasus_2").val("")
+                $("#hp_kasus_2").val("")
+                $("#aktifitas_kasus_2").val("")
+                $("#nama_kasus_3").val("")
+                $("#umur_kasus_3").val("")
+                $("#jk_kasus_3").val("")
+                $("#hubungan_kasus_3").val("")
+                $("#alamat_kasus_3").val("")
+                $("#hp_kasus_3").val("")
+                $("#aktifitas_kasus_3").val("")
+                $("#nama_kasus_4").val("")
+                $("#umur_kasus_4").val("")
+                $("#jk_kasus_4").val("")
+                $("#hubungan_kasus_4").val("")
+                $("#alamat_kasus_4").val("")
+                $("#hp_kasus_4").val("")
+                $("#aktifitas_kasus_4").val("")
               // } else {
                 // data = data.replace("<p>", "");
                 // data = data.replace("</p>", "");
