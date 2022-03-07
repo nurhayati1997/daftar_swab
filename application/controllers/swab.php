@@ -145,7 +145,8 @@ class swab extends CI_Controller
 			"hubungan_kasus_4"=>$this->input->post("hubungan_kasus_4", TRUE),
 			"alamat_kasus_4"=>$this->input->post("alamat_kasus_4", TRUE),
 			"hp_kasus_4"=>$this->input->post("hp_kasus_4", TRUE),
-			"aktifitas_kasus_4"=>$this->input->post("aktifitas_kasus_4", TRUE)
+			"aktifitas_kasus_4"=>$this->input->post("aktifitas_kasus_4", TRUE),
+			"status"=>0
 		];
 		$this->db_model->insert('swab_syamrabu', $data);
 		echo json_encode($data);
