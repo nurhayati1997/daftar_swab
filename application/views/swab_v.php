@@ -114,14 +114,10 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Pilih Jenis Test SWAB</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="jenis_swab" id="jenis_swab" value="antigen" />
-																<span></span>SWAB ANTIGEN</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="jenis_swab" id="jenis_swab" value="pcr" />
-																<span></span>SWAB PCR</label>
-															</div>
+															<select class="form-control" id="jenis_swab">
+																<option value="Antigen">Antigen</option>
+																<option value="PCR">PCR</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<label>A. IDENTITAS PASIEN:</label>
@@ -165,14 +161,10 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Pilih Jenis Kelamin</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="jk" id="jk" value="male" />
-																<span></span>Laki-Laki</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="jk" id="jk" value="female" />
-																<span></span>Perempuan</label>
-															</div>
+															<select class="form-control" id="jk">
+																<option value="Laki-Laki">Laki-Laki</option>
+																<option value="Perempuan">Perempuan</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Username:</label> -->
@@ -233,14 +225,10 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Riwayat Demam ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_demam" id="riwayat_demam" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_demam" id="riwayat_demam" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="riwayat_demam">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Fax:</label> -->
@@ -257,239 +245,149 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Batuk?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_batuk" id="riwayat_batuk" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_batuk">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Pilek?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_pilek" id="riwayat_pilek" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_pilek">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Sakit Tenggorokan?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_tenggorokan" id="riwayat_sakit_tenggorokan" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_sakit_tenggorokan">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Sakit Kepala?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_sakit_kepala" id="riwayat_sakit_kepala" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_sakit_kepala">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Lemah (malaise)?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="lemah" id="lemah" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="lemah" id="lemah" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="lemah" id="lemah" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="lemah">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Nyeri Otot?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="nyeri_otot" id="nyeri_otot"  value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="nyeri_otot" id="nyeri_otot" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="nyeri_otot" id="nyeri_otot" value="2"/>
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="nyeri_otot">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Nyeri Mual atau Muntah?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="mual" id="mual"  value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="mual" id="mual" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="mual" id="mual" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="mual">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Nyeri Abdomen?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="abdomen" id="abdomen"  value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="abdomen" id="abdomen" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="abdomen" id="abdomen" value="2"/>
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="abdomen">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Diare?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="diare" id="diare"  value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="diare" id="diare" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="diare" id="diare" value="2"/>
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="diare">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 													</div>
 													<div class="form-group row">
 														<div class="col-lg-4">
 															<label>KONDISI PENYERTA:</label>
 															<span class="form-text text-muted">Apakah Hamil ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="hamil" id="hamil" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="hamil" id="hamil" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="hamil">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Diabetes ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="diabetes" id="diabetes" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="diabetes" id="diabetes" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="diabetes">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Penyakit Jantung ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="jantung" id="jantung" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="jantung" id="jantung" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="jantung">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Hipertensi ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="hipertensi" id="hipertensi" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="hipertensi" id="jantung" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="hipertensi">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Keganasan ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="keganasan" id="keganasan" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="keganasan" id="keganasan" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="keganasan">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Gangguan Imunologi ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="gangguan_imunologi" id="gangguan_imunologi" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="gangguan_imunologi" id="gangguan_imunologi" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="gangguan_imunologi">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Gagal Ginjal  Kronis ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="gagal_ginjal" id="gagal_ginjal" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="gagal_ginjal" id="gagal_ginjal" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="gagal_ginjal">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Gangguan Hati Kronis ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="gangguan_hati" id="gangguan_hati" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="gangguan_hati" id="gangguan_hati" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="gangguan_hati">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada PPOK ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="ppok" id="ppok" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="ppok" id="ppok" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="ppok">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Lainnya, Sebutkan :</span>
@@ -507,31 +405,19 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<label>DIAGNOSIS:</label>
 															<span class="form-text text-muted">Apakah ada Pneumonia (Klinis atau Radiologi) ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="pneumonia" id="pneumonia" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="pneumonia" id="pneumonia" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="pneumonia" id="pneumonia" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="pneumonia">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada ARDS (Acute Respiratory Distress Syndrome) ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="ards" id="ards" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="ards" id="ards" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="ards" id="ards" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="ards">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Diagnosis Lainnya, Sebutkan :</span>
@@ -546,17 +432,11 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah Pasien Mempunyai diagnosis atau otiologi lain untuk penyakit Pernafasannya ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="etiologi" id="etiologi" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="etiologi" id="etiologi" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="etiologi" id="etiologi" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="etiologi">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Diagnosis Penyaki Pernafasan Lainnya, Sebutkan :</span>
@@ -571,14 +451,10 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah Pasien dirawat di rumah sakit ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="rawat_rs" id="rawat_rs" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="rawat_rs" id="rawat_rs" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="rawat_rs">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Bila Ya, Nama RS Terakhir :</span>
@@ -604,36 +480,24 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah Pasien dirawat di ICU ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="rawat_icu" id="rawat_icu" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="rawat_icu" id="rawat_icu" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="rawat_icu">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah di lakukan tindakan perawatan intubasi ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="tindakan_intubasi" id="tindakan_intubasi" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="tindakan_intubasi" id="tindakan_intubasi" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="tindakan_intubasi">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah di lakukan tindakan perawatan penggunaan EMCO ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="penggunaan_emco" id="penggunaan_emco" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="penggunaan_emco" id="penggunaan_emco" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="penggunaan_emco">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Jika ada, nama-nama RS sebelumnya :</span>
@@ -648,17 +512,11 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Status Pasien terakhir : </span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="status_pasien_terakhir" id="status_pasien_terakhir" value="1" />
-																<span></span>Selesai Isolasi/Sembuh</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="status_pasien_terakhir" id="status_pasien_terakhir" value="2" />
-																<span></span>Masih Sakit</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="status_pasien_terakhir" id="status_pasien_terakhir" value="3" />
-																<span></span>Meninggal</label>
-															</div>
+															<select class="form-control" id="status_pasien_terakhir">
+																<option value="Selesai Isolasi / Sembuh">Selesai Isolasi / Sembuh</option>
+																<option value="Masih Sakit">Masih Sakit</option>
+																<option value="Meninggal">Meninggal</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Jika Meninggal, Tanggal Meninggal :</span>
@@ -677,17 +535,11 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<label>C.Faktor Riwayat Perjalanan:</label>
 															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan dari luar negeri ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_luar_negeri" id="riwayat_luar_negeri" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_luar_negeri">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Sebutkan Negara Pertama</span>
@@ -780,17 +632,11 @@ License: You must have a valid license purchased only from themeforest(the above
 														<!-- transmisi lokal -->
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan dari area transmisi lokal ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_transmisi_lokal" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_transmisi_lokal">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Sebutkan Provinsi Pertama</span>
@@ -883,17 +729,11 @@ License: You must have a valid license purchased only from themeforest(the above
 														<!-- ke transmisi lokal -->
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki riwayat perjalanan ke area transmisi lokal ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_ketransmisi_lokal" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_ketransmisi_lokal">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Sebutkan Provinsi</span>
@@ -920,17 +760,11 @@ License: You must have a valid license purchased only from themeforest(the above
 														<!-- kontak dengan suspek/probable-->
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki kontak dengan suspek/probable COVID-19 ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="0" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_transmisi_lokal" id="riwayat_kontak_suspek" value="2" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_kontak_suspek">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Sebutkan Nama yang Kontak suspek/probable Pertama</span>
@@ -995,17 +829,11 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<label>D. Faktor Kontak/Paparan (lanjutan)</label>
 															<span class="form-text text-muted">Dalam 14 hari sebelum sakit, apakah memiliki kontak erat dengan kasus konfirmasi dan probable COVID-19 ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_kontak_konfirm" id="riwayat_kontak_konfirm" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_kontak_konfirm" id="riwayat_kontak_konfirm" value="2" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="riwayat_kontak_konfirm" id="riwayat_kontak_konfirm" value="0" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="riwayat_kontak_konfirm">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Sebutkan Nama yang Kontak Konfirm & probable Pertama</span>
@@ -1064,31 +892,19 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah pasien termasuk cluster ISPA berat (demam & pneumonia membutuhkan perawatan Rumah Sakit) yang tidak diketahui penyebabnya ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="ispa" id="ispa" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="ispa" id="ispa" value="2" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="ispa" id="ispa" value="0" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="ispa">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah pasien memiliki hewan peliharaan ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="hewan_peliharaaan" id="hewan_peliharaaan" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="hewan_peliharaaan" id="hewan_peliharaaan" value="2" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="hewan_peliharaaan" id="hewan_peliharaaan" value="0" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="hewan_peliharaan">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Sebutkan, Jika memiliki hewan peliharaan</span>
@@ -1103,55 +919,31 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah Pasien Seorang petugas Kesehatan ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="petugas_kesehatan" id="petugas_kesehatan" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="petugas_kesehatan" id="petugas_kesehatan" value="2" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="petugas_kesehatan" id="petugas_kesehatan" value="0" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="petugas_kesehatan">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+																<option value="Tidak Tahu">Tidak Tahu</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Jika Petugas kesehatan, Alat Pelindung diri (APD) apa yg dipakai
 																saat melakukan perawatan pada pasien suspek / peobable / Konfirm?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="apd" id="apd" value="1" />
-																<span></span>Gwon</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="apd" id="apd" value="2" />
-																<span></span>Masker Media</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="apd" id="apd" value="3" />
-																<span></span>Sarung Tangan</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="apd" id="apd" value="4" />
-																<span></span>Masker </label>
-																<label class="radio radio-solid">
-																<input type="radio" name="apd" id="apd" value="5" />
-																<span></span>Tidak</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="apd" id="apd" value="6" />
-																<span></span>Tidak Tahu</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="apd" id="apd" value="7" />
-																<span></span>Tidak Tahu</label>
-															</div>
+															<select class="form-control" id="apd">
+																<option value="Gown">Gown</option>
+																<option value="Masker Medis">Masker Medis</option>
+																<option value="Sarung Tangan">Sarung Tangan</option>
+																<option value="Masker N10SH-N95, ANEU STANDARTD FFP2">Masker N10SH-N95, ANEU STANDARTD FFP2</option>
+																<option value="FFP3">FFP3</option>
+																<option value="Kacamata Pelindung (goggle)">Kacamata Pelindung (goggle)</option>
+																<option value="Tidak Memakai APD">Tidak Memakai APD</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah Melakukan prosedur yang menimbukan aerosol ?</span>
-															<div class="radio-inline" >
-																<label class="radio radio-solid">
-																<input type="radio" name="aerosol" id="aerosol" value="1" />
-																<span></span>Ya</label>
-																<label class="radio radio-solid">
-																<input type="radio" name="aerosol" id="aerosol" value="0" />
-																<span></span>Tidak</label>
-															</div>
+															<select class="form-control" id="aerosol">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Sebutkan, Jika melakukan prosedur yang menimbulkan aerosol</span>
@@ -1648,7 +1440,7 @@ License: You must have a valid license purchased only from themeforest(the above
           var tgl_kontak_konfirm_1 = $("#tgl_kontak_konfirm_1").val()
           var tgl_terakhir_kontak_konfirm_1 = $("#tgl_terakhir_kontak_konfirm_1").val()
           var ispa = $("#ispa").val()
-          var hewan_peliharaaan = $("#hewan_peliharaaan").val()
+          var hewan_peliharaan = $("#hewan_peliharaan").val()
           var jenis_hewan_peliharaan = $("#jenis_hewan_peliharaan").val()
           var petugas_kesehatan = $("#petugas_kesehatan").val()
           var apd = $("#apd").val()
@@ -1773,7 +1565,7 @@ License: You must have a valid license purchased only from themeforest(the above
               tgl_kontak_konfirm_1: tgl_kontak_konfirm_1,
               tgl_terakhir_kontak_konfirm_1: tgl_terakhir_kontak_konfirm_1,
               ispa: ispa,
-              hewan_peliharaaan: hewan_peliharaaan,
+              hewan_peliharaan: hewan_peliharaan,
               jenis_hewan_peliharaan: jenis_hewan_peliharaan,
               petugas_kesehatan: petugas_kesehatan,
               apd: apd,
@@ -1897,7 +1689,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 $("#tgl_kontak_konfirm_1").val("")
                 $("#tgl_terakhir_kontak_konfirm_1").val("")
                 $("#ispa").val("")
-                $("#hewan_peliharaaan").val("")
+                $("#hewan_peliharaan").val("")
                 $("#jenis_hewan_peliharaan").val("")
                 $("#petugas_kesehatan").val("")
                 $("#apd").val("")

@@ -112,7 +112,7 @@ class swab extends CI_Controller
 			"tgl_kontak_konfirm_1"=>$this->input->post("tgl_kontak_konfirm_1", TRUE),
 			"tgl_terakhir_kontak_konfirm_1"=>$this->input->post("tgl_terakhir_kontak_konfirm_1", TRUE),
 			"ispa"=>$this->input->post("ispa", TRUE),
-			"hewan_peliharaaan"=>$this->input->post("hewan_peliharaaan", TRUE),
+			"hewan_peliharaan"=>$this->input->post("hewan_peliharaan", TRUE),
 			"jenis_hewan_peliharaan"=>$this->input->post("jenis_hewan_peliharaan", TRUE),
 			"petugas_kesehatan"=>$this->input->post("petugas_kesehatan", TRUE),
 			"apd"=>$this->input->post("apd", TRUE),
