@@ -953,7 +953,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<i class="la la-info-circle"></i>
 																	</span>
 																</div>
-																<input type="text" class="form-control" id="sebutkan_aerosol" placeholder="Jenis Hewan Peliharaan " />
+																<input type="text" class="form-control" id="sebutkan_aerosol" placeholder="prosedur yang menimbulkan aerosol" />
 															</div>
 														</div>
 													</div>
