@@ -101,6 +101,9 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="card card-custom example example-compact">
 											<div class="card-header">
 												<h3 class="card-title"><img src="assets/logot.png" >Formulir Penyelidikan Epidemiologi Coronavirus Disease (COVID 19)</h3>
+												<h4 class="card-title">Pastikan Mengisi data dengan Benar, Data tidak tersimpan jika : </h4>
+												<br> <h4 class="card-title">1. Jenis Swab, Nama, NIK dan No Hp. TIDAK BOLEH KOSONG </h4>
+												<br> <h4 class="card-title">2. KOLOM TIDAK BOLEH KOSONG, Lebih baik diisi (-) </h4>
 												<div class="card-toolbar">
 													<div class="example-tools justify-content-center">
 														<!-- <span class="example-toggle" data-toggle="tooltip" title="View code"></span> -->
@@ -1307,14 +1310,12 @@ License: You must have a valid license purchased only from themeforest(the above
 							<!--begin::Copyright-->
 							<div class="text-dark order-2 order-md-1">
 								<span class="text-muted font-weight-bold mr-2">2022©</span>
-								<a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">Keenthemes</a>
+								<a target="_blank" class="text-dark-75 text-hover-primary">IT SYAMRABU</a>
 							</div>
 							<!--end::Copyright-->
 							<!--begin::Nav-->
 							<div class="nav nav-dark order-1 order-md-2">
-								<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pr-3 pl-0">About</a>
-								<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link px-3">Team</a>
-								<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-3 pr-0">Contact</a>
+								<a target="_blank" class="nav-link pr-3 pl-0">TIM IT RSUD SYAMRABU BANGKALAN</a>
 							</div>
 							<!--end::Nav-->
 						</div>
@@ -1729,7 +1730,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 $('#pesanErrorTambah').html(data)
               // }
 
-              $("#tombolTambah").html('Data Sudah Tersimpan')
+              $("#tombolTambah").html('Tambah')
               // $("#tombolTambah").html('Tambah')
               // $("#modalTambah").modal('hide');
                 // tampilkan();
