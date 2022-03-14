@@ -101,10 +101,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="card card-custom example example-compact">
 											<div class="card-header">
 												<h3 class="card-title"><img src="assets/logot.png" >Formulir Penyelidikan Epidemiologi Coronavirus Disease (COVID 19)</h3>
-												<h4 class="card-title">Pastikan Mengisi data dengan Benar, Data tidak tersimpan jika : </h4>
-												<br> <h4 class="card-title">1. Jenis Swab, Nama, NIK dan No Hp. TIDAK BOLEH KOSONG </h4>
-												<br> <h4 class="card-title">2. KOLOM TIDAK BOLEH KOSONG, Lebih baik diisi (-) </h4>
-												<div class="card-toolbar">
+												<h4 class="card-title">Tanda (*) WAJIB DIISI, jika tidak disi data tidak tersimpan</h4>
 													<div class="example-tools justify-content-center">
 														<!-- <span class="example-toggle" data-toggle="tooltip" title="View code"></span> -->
 													</div>
@@ -116,20 +113,32 @@ License: You must have a valid license purchased only from themeforest(the above
 													<div class="form-group row">
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
-															<span class="form-text text-muted">Pilih Jenis Test SWAB</span>
+															<span class="form-text text-muted text-danger">Pilih Jenis Test SWAB </span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="jenis_swab">
 																<option value="Antigen">Antigen</option>
 																<option value="PCR">PCR</option>
 															</select>
 														</div>
 														<div class="col-lg-4">
+															<!-- <label>Jenis:</label> -->
+															<span class="form-text text-muted">Tujuan Test SWAB</span>
+															<p class="text-danger">(*)</p>
+															<select class="form-control" id="tujuan_swab">
+																<option value="Screening/Diagnosa">Screening/Diagnosa</option>
+																<option value="Perjalanan">Perjalanan</option>
+															</select>
+														</div>
+														<div class="col-lg-4">
 															<label>A. IDENTITAS PASIEN:</label>
 															<span class="form-text text-muted">Mohon Masukkan Nama Lengkap Anda</span>
+															<p class="text-danger">(*)</p>
 															<input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" required />
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Email:</label> -->
 															<span class="form-text text-muted">Mohon Masukkan NIK Sesuai KTP</span>
+															<p class="text-danger">(*)</p>
 															<input type="text" class="form-control" id="nik" placeholder="NIK" />
 														</div>
 														<div class="col-lg-4">
@@ -164,6 +173,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Pilih Jenis Kelamin</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="jk">
 																<option value="Laki-Laki">Laki-Laki</option>
 																<option value="Perempuan">Perempuan</option>
@@ -184,6 +194,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Email:</label> -->
 															<span class="form-text text-muted">Mohon Masukkan Jalan / Blok</span>
+															<p class="text-danger">(*)</p>
 															<input type="text" class="form-control" id="jalan" placeholder="Jalan / Blok" />
 														</div>
 														<div class="col-lg-4">
@@ -194,21 +205,25 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Email:</label> -->
 															<span class="form-text text-muted">Mohon Masukkan Desa / Kelurahan</span>
+															<p class="text-danger">(*)</p>
 															<input type="text" class="form-control" id="desa" placeholder="Desa / Kelurahan" />
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Email:</label> -->
 															<span class="form-text text-muted">Mohon Masukkan Kecamatan</span>
+															<p class="text-danger">(*)</p>
 															<input type="text" class="form-control" id="kec" placeholder="Kecamatan" />
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Email:</label> -->
 															<span class="form-text text-muted">Mohon Masukkan Kabupaten / Kota</span>
+															<p class="text-danger">(*)</p>
 															<input type="text" class="form-control" id="kab" placeholder="Kabupaten / Kota" />
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Username:</label> -->
 															<span class="form-text text-muted">Masukkan Telp / HP</span>
+															<p class="text-danger">(*)</p>
 															<div class="input-group">
 																<div class="input-group-prepend">
 																	<span class="input-group-text">
@@ -223,11 +238,13 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<label>B. INFORMASI KLINIS:</label>
 															<span class="form-text text-muted">Masukkan Tgl Pertama kali Timbul gejala</span>
+															<p class="text-danger">(*)</p>
 															<input type="date" class="form-control" id="timbul_gejala" placeholder="Tgl pertama kali timbul gejala" />
 														</div>
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Riwayat Demam ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="riwayat_demam">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -248,6 +265,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Batuk?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="riwayat_batuk">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -257,6 +275,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Pilek?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="riwayat_pilek">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -266,6 +285,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Sakit Tenggorokan?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="riwayat_sakit_tenggorokan">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -275,6 +295,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah ada Sakit Kepala?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="riwayat_sakit_kepala">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -284,6 +305,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Lemah (malaise)?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="lemah">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -293,6 +315,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Nyeri Otot?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="nyeri_otot">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -302,6 +325,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Nyeri Mual atau Muntah?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="mual">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -311,6 +335,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Nyeri Abdomen?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="abdomen">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -320,6 +345,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<!-- <label>Jenis:</label> -->
 															<span class="form-text text-muted">Apakah Diare?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="diare">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -331,6 +357,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="col-lg-4">
 															<label>KONDISI PENYERTA:</label>
 															<span class="form-text text-muted">Apakah Hamil ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="hamil">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -338,6 +365,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Diabetes ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="diabetes">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -345,6 +373,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Penyakit Jantung ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="jantung">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -352,6 +381,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Hipertensi ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="hipertensi">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -359,6 +389,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Keganasan ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="keganasan">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -366,6 +397,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Gangguan Imunologi ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="gangguan_imunologi">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -373,6 +405,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Gagal Ginjal  Kronis ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="gagal_ginjal">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -380,6 +413,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada Gangguan Hati Kronis ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="gangguan_hati">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
@@ -387,13 +421,15 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 														<div class="col-lg-4">
 															<span class="form-text text-muted">Apakah ada PPOK ?</span>
+															<p class="text-danger">(*)</p>
 															<select class="form-control" id="ppok">
 																<option value="Ya">Ya</option>
 																<option value="Tidak">Tidak</option>
 															</select>
 														</div>
 														<div class="col-lg-4">
-															<span class="form-text text-muted">Lainnya, Sebutkan :</span>
+															<span class="form-text text-muted">Lainnya, Sebutkan:</span>
+															<p class="text-danger">(*)</p>
 															<div class="input-group">
 																<div class="input-group-prepend">
 																	<span class="input-group-text">
@@ -1278,6 +1314,36 @@ License: You must have a valid license purchased only from themeforest(the above
 															</div>
 														</div>
 													</div>
+
+													<!-- vaksin -->
+													
+													<div class="form-group row">
+														<div class="col-lg-4">
+															<label>E. VAKSIN:</label>
+															<span class="form-text text-muted">Apakah Sudah Vaksin 1 ?</span>
+															<p class="text-danger">(*)</p>
+															<select class="form-control" id="vaksin1">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah Sudah Vaksin 2 ?</span>
+															<p class="text-danger">(*)</p>
+															<select class="form-control" id="vaksin2">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
+														</div>
+														<div class="col-lg-4">
+															<span class="form-text text-muted">Apakah sudah Booster ?</span>
+															<p class="text-danger">(*)</p>
+															<select class="form-control" id="booster">
+																<option value="Ya">Ya</option>
+																<option value="Tidak">Tidak</option>
+															</select>
+														</div>
+													</div>
 												</div>
 												<div class="card-footer">
 													<div class="row">
@@ -1359,6 +1425,7 @@ License: You must have a valid license purchased only from themeforest(the above
           $("#tombolTambah").html('<i class="fas fa-spinner fa-pulse"></i> Memproses..')
           var nama = $("#nama").val()
           var jenis_swab = $("#jenis_swab").val()
+          var tujuan_swab = $("#tujuan_swab").val()
           var nik = $("#nik").val()
           var nama_ortu = $("#nama_ortu").val()
           var ttl = $("#ttl").val()
@@ -1475,6 +1542,9 @@ License: You must have a valid license purchased only from themeforest(the above
           var alamat_kasus_4 = $("#alamat_kasus_4").val()
           var hp_kasus_4 = $("#hp_kasus_4").val()
           var aktifitas_kasus_4 = $("#aktifitas_kasus_4").val()
+          var vaksin1 = $("#vaksin1").val()
+          var vaksin2 = $("#vaksin2").val()
+          var booster = $("#booster").val()
     // if (rule == null) {
     //   rule = 0;
     // }
@@ -1484,6 +1554,7 @@ License: You must have a valid license purchased only from themeforest(the above
             data: {
               nama: nama,
               jenis_swab: jenis_swab,
+              tujuan_swab: tujuan_swab,
               nik: nik,
               nama_ortu: nama_ortu,
               ttl: ttl,
@@ -1599,7 +1670,10 @@ License: You must have a valid license purchased only from themeforest(the above
               hubungan_kasus_4: hubungan_kasus_4,
               alamat_kasus_4: alamat_kasus_4,
               hp_kasus_4: hp_kasus_4,
-              aktifitas_kasus_4: aktifitas_kasus_4
+              aktifitas_kasus_4: aktifitas_kasus_4,
+              vaksin1: vaksin1,
+              vaksin2: vaksin2,
+              booster: booster
             },
             dataType: 'json',
             success: function(data) {
@@ -1608,6 +1682,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 
                 $("#nama").val("")
                 $("#jenis_swab").val("")
+                $("#tujuan_swab").val("")
                 $("#nik").val("")
                 $("#nama_ortu").val("")
                 $("#ttl").val("")
@@ -1724,6 +1799,9 @@ License: You must have a valid license purchased only from themeforest(the above
                 $("#alamat_kasus_4").val("")
                 $("#hp_kasus_4").val("")
                 $("#aktifitas_kasus_4").val("")
+                $("#vaksin1").val("")
+                $("#vaksin2").val("")
+                $("#booster").val("")
               // } else {
                 // data = data.replace("<p>", "");
                 // data = data.replace("</p>", "");

@@ -27,10 +27,39 @@ class swab extends CI_Controller
 
 	public function tambah_data()
 	{
+		$this->form_validation->set_rules('tujuan_swab', 'tujuan_swab', 'required|trim');
 		$this->form_validation->set_rules('nama', 'nama', 'required|trim');
 		$this->form_validation->set_rules('jenis_swab', 'jenis_swab', 'required|trim');
 		$this->form_validation->set_rules('nik', 'nik', 'required|trim');
+		$this->form_validation->set_rules('jk', 'jk', 'required|trim');
+		$this->form_validation->set_rules('jalan', 'jalan', 'required|trim');
+		$this->form_validation->set_rules('desa', 'desa', 'required|trim');
+		$this->form_validation->set_rules('kec', 'kec', 'required|trim');
+		$this->form_validation->set_rules('kab', 'kab', 'required|trim');
+		// $this->form_validation->set_rules('timbul_gejala', 'timbul_gejala', 'required|trim');
+		// $this->form_validation->set_rules('riwayat_demam', 'riwayat_demam', 'required|trim');
+		// $this->form_validation->set_rules('riwayat_pilek', 'riwayat_pilek', 'required|trim');
+		// $this->form_validation->set_rules('riwayat_sakit_tenggorokan', 'riwayat_sakit_tenggorokan', 'required|trim');
+		// $this->form_validation->set_rules('riwayat_sakit_kepala', 'riwayat_sakit_kepala', 'required|trim');
+		// $this->form_validation->set_rules('lemah', 'lemah', 'required|trim');
+		// $this->form_validation->set_rules('nyeri_otot', 'nyeri_otot', 'required|trim');
 		$this->form_validation->set_rules('no_hp', 'no_hp', 'required|trim');
+		// $this->form_validation->set_rules('mual', 'mual', 'required|trim');
+		// $this->form_validation->set_rules('abdomen', 'abdomen', 'required|trim');
+		// $this->form_validation->set_rules('diare', 'diare', 'required|trim');
+		// $this->form_validation->set_rules('hamil', 'hamil', 'required|trim');
+		// $this->form_validation->set_rules('diabetes', 'diabetes', 'required|trim');
+		// $this->form_validation->set_rules('jantung', 'jantung', 'required|trim');
+		// $this->form_validation->set_rules('hipertensi', 'hipertensi', 'required|trim');
+		// $this->form_validation->set_rules('keganasan', 'keganasan', 'required|trim');
+		// $this->form_validation->set_rules('gangguan_imunologi', 'gangguan_imunologi', 'required|trim');
+		// $this->form_validation->set_rules('gagal_ginjal', 'gagal_ginjal', 'required|trim');
+		// $this->form_validation->set_rules('gangguan_hati', 'gangguan_hati', 'required|trim');
+		// $this->form_validation->set_rules('ppok', 'ppok', 'required|trim');
+		// $this->form_validation->set_rules('kondisi_penyerta_lain', 'kondisi_penyerta_lain', 'required|trim');
+		$this->form_validation->set_rules('vaksin1', 'vaksin1', 'required|trim');
+		$this->form_validation->set_rules('vaksin2', 'vaksin2', 'required|trim');
+		$this->form_validation->set_rules('booster', 'booster', 'required|trim');
 		if ($this->form_validation->run() == false) {
 			if (form_error("nama")) {
 				$error = "Nama tidak boleh kosong.";
@@ -40,6 +69,66 @@ class swab extends CI_Controller
 				$error = form_error("nik tidak boleh kosong.");
 			} else if (form_error("no_hp")) {
 				$error = form_error("No HP tidak boleh kosong.");
+			// } else if (form_error("tujuan_swab")) {
+			// 	$error = form_error("Tujuan Swab tidak boleh kosong.");
+			// } else if (form_error("jk")) {
+			// 	$error = form_error("Jenis Kelamin tidak boleh kosong.");
+			// } else if (form_error("jalan")) {
+			// 	$error = form_error("Jalan tidak boleh kosong.");
+			// } else if (form_error("desa")) {
+			// 	$error = form_error("Desa tidak boleh kosong.");
+			// } else if (form_error("kec")) {
+			// 	$error = form_error("Kecamatan tidak boleh kosong.");
+			// } else if (form_error("kab")) {
+			// 	$error = form_error("Kabupaten tidak boleh kosong.");
+			// } else if (form_error("timbul_gejala")) {
+			// 	$error = form_error("Tgl Pertama kali Timbul gejala tidak boleh kosong.");
+			// } else if (form_error("riwayat_demam")) {
+			// 	$error = form_error("Riwayat Demam tidak boleh kosong.");
+			// } else if (form_error("riwayat_batuk")) {
+			// 	$error = form_error("Batuk tidak boleh kosong.");
+			// } else if (form_error("riwayat_pilek")) {
+			// 	$error = form_error("Pilek tidak boleh kosong.");
+			// } else if (form_error("riwayat_sakit_tenggorokan")) {
+			// 	$error = form_error("Sakit Tenggorokan tidak boleh kosong.");
+			// } else if (form_error("riwayat_sakit_kepala")) {
+			// 	$error = form_error("Sakit Kepala tidak boleh kosong.");
+			// } else if (form_error("lemah")) {
+			// 	$error = form_error("Lemah tidak boleh kosong.");
+			// } else if (form_error("nyeri_otot")) {
+			// 	$error = form_error("Nyeri Otot tidak boleh kosong.");
+			// } else if (form_error("mual")) {
+			// 	$error = form_error("Mual tidak boleh kosong.");
+			// } else if (form_error("abdomen")) {
+			// 	$error = form_error("Abdomen tidak boleh kosong.");
+			// } else if (form_error("diare")) {
+			// 	$error = form_error("Diare tidak boleh kosong.");
+			// } else if (form_error("hamil")) {
+			// 	$error = form_error("Hamil tidak boleh kosong.");
+			// } else if (form_error("diabetes")) {
+			// 	$error = form_error("Diabetes tidak boleh kosong.");
+			// } else if (form_error("jantung")) {
+			// 	$error = form_error("Jantung tidak boleh kosong.");
+			// } else if (form_error("hipertensi")) {
+			// 	$error = form_error("Hipertensi tidak boleh kosong.");
+			// } else if (form_error("keganasan")) {
+			// 	$error = form_error("Keganasan tidak boleh kosong.");
+			// } else if (form_error("gangguan_imunologi")) {
+			// 	$error = form_error("Gangguan_imunologi tidak boleh kosong.");
+			// } else if (form_error("gagal_ginjal")) {
+			// 	$error = form_error("Gagal ginjal tidak boleh kosong.");
+			// } else if (form_error("gangguan_hati")) {
+			// 	$error = form_error("Gangguan hati tidak boleh kosong.");
+			// } else if (form_error("ppok")) {
+			// 	$error = form_error("Ppok tidak boleh kosong.");
+			// } else if (form_error("kondisi_penyerta_lain")) {
+			// 	$error = form_error("Kondisi penyerta lain tidak boleh kosong.");
+			// } else if (form_error("vaksin1")) {
+			// 	$error = form_error("Vaksin 1 tidak boleh kosong.");
+			} else if (form_error("vaksin1")) {
+				$error = form_error("Vaksin 2 tidak boleh kosong.");
+			} else if (form_error("booster")) {
+				$error = form_error("Booster tidak boleh kosong.");
 			} else {
 				$error = form_error("nama");
 			}
@@ -48,6 +137,7 @@ class swab extends CI_Controller
 			$data = [
 				"nama" => $this->input->post("nama", TRUE),
 				"jenis_swab" => $this->input->post("jenis_swab", TRUE),
+				"tujuan_swab" => $this->input->post("tujuan_swab", TRUE),
 				"nik" => $this->input->post("nik", TRUE),
 				"nama_ortu" => $this->input->post("nama_ortu", TRUE),
 				"ttl" => $this->input->post("ttl", TRUE),
@@ -164,6 +254,9 @@ class swab extends CI_Controller
 				"alamat_kasus_4"=>$this->input->post("alamat_kasus_4", TRUE),
 				"hp_kasus_4"=>$this->input->post("hp_kasus_4", TRUE),
 				"aktifitas_kasus_4"=>$this->input->post("aktifitas_kasus_4", TRUE),
+				"vaksin1"=>$this->input->post("vaksin1", TRUE),
+				"vaksin2"=>$this->input->post("vaksin2", TRUE),
+				"booster"=>$this->input->post("booster", TRUE),
 				"status"=>"Belum dilayani"
 			];
 			$this->db_model->insert('swab_syamrabu', $data);
